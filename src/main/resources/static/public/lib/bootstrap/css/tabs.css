@@ -1,0 +1,10 @@
+body {
+  padding : 60px ;
+
+}
+
+#exTab1 .tab-content {
+  color : #428bca;
+  background-color: white;
+  padding : 5px 15px;
+}
