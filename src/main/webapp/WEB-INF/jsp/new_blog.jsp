@@ -45,6 +45,15 @@
 
                         <form:form modalAttribute="blogDto" role="form">
                         
+                          <div class="form-group">
+                              <label>Type</label>
+                             <select class="form-control" id="type" name="type">
+							    <option>Blog</option>
+							    <option>Code</option>
+							    <option>Concordance</option>							    
+							  </select>
+                          </div>
+                        
                          <div class="form-group">
                               <label>Blog Image</label>
                               <input type="text" id="imageUrl" name="imageUrl" class="form-control" placeholder="Enter Blog Image URL here">
@@ -65,38 +74,54 @@
 
 						<div class="form-group">
                               <label>Title Tag - (SEO)</label>
-                              <input type="text" id="title_tag" name="title_tag" class="form-control" placeholder="Enter HTML Title Tag">
+                              <input type="text" id="title" name="tag" class="form-control" placeholder="Enter HTML Title Tag">
                           </div>
                            <div class="form-group">
-                              <label>Meta Description - (SEO))</label>
-                              <textarea id="meta_description" name="meta_description" class="form-control" rows="5" ></textarea>
+                              <label>Meta Description - (SEO)</label>
+                              <textarea id="meta" name="meta" class="form-control" rows="5" ></textarea>
+                          </div>
+                          <div class="form-group">
+                              <label>FB Link</label>
+                              <input type="text" id="fbLink" name="fbLink" class="form-control" placeholder="Enter FB Link">
+                          </div>
+                           <div class="form-group">
+                              <label>TW Link</label>
+                              <input type="text" id="twink" name="twink" class="form-control" placeholder="Enter Twitter Link">
+                          </div>
+                           <div class="form-group">
+                              <label>Google Plus Link</label>
+                              <input type="text" id="gpLink" name="gpLink" class="form-control" placeholder="Enter Google+ Link">
+                          </div>
+                           <div class="form-group">
+                              <label>Linkdin Link</label>
+                              <input type="text" id="inLink" name="inLink" class="form-control" placeholder="Enter Linkdin Link">
                           </div>
 						  <div class="checkbox">
- 							 <label><input type="checkbox" value="">Big Data & Analytics</label>
+ 							 <label><input type="checkbox" name="categories" value="Big Data & Analytics">Big Data & Analytics</label>
 						 </div>
 						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Programming & Web Development</label>
+  							<label><input type="checkbox" name="categories" value="Programming & Web Development">Programming & Web Development</label>
 						 </div>
 						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">Data Science</label>
+ 							 <label><input type="checkbox" name="categories" value="Data Science">Data Science</label>
 						 </div>
 						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Cloud Computing</label>
+  							<label><input type="checkbox" name="categories" value="Cloud Computing">Cloud Computing</label>
 						 </div>
 						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">System Administration</label>
+ 							 <label><input type="checkbox" name="categories" value="System Administration">System Administration</label>
 						 </div>
 						 <div class="checkbox">
-  							<label><input type="checkbox" value="">DevOps</label>
+  							<label><input type="checkbox" name="categories" value="DevOps">DevOps</label>
 						 </div>
 						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">Database Management</label>
+ 							 <label><input type="checkbox" name="categories" value="Database Management">Database Management</label>
 						 </div>
 						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Software Testing</label>
+  							<label><input type="checkbox" name="categories" value="Software Testing">Software Testing</label>
 						 </div>
 						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Mobile Development</label>
+  							<label><input type="checkbox" name="categories" value="Mobile Development">Mobile Development</label>
 						 </div>
 
 

@@ -97,7 +97,15 @@
                         	<li>
                            		<a href="<c:url value="/blogs" />">Blogs</a>
                         	</li>
-                        	
+                        	<li>
+                           		<a href="<c:url value="/blogs/code" />" >Code</a>
+                        	</li>
+                        	<li>
+                           		<a href="<c:url value="/blogs/concordance" />">Concordance</a>
+                        	</li>
+                        	<li>
+                           		<a href="<c:url value="/downloads" />">Downloads</a>
+                        	</li>
                           </ul>
                        </li>   	
                         <li>

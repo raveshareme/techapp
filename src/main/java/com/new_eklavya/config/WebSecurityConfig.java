@@ -50,6 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
                 		"/contact",
                 		"/legal",
                 		"/wysiwyg",
+                		"/downloads",
                 		"/knowledge-base").permitAll()
 				.mvcMatchers("/signup",
 						"/forgot-password",

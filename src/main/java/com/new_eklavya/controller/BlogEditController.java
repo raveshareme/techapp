@@ -40,6 +40,11 @@ public class BlogEditController {
 		bdto.setContent(blog.getContent());
 		bdto.setTag(blog.getTag());
 		bdto.setMeta(blog.getMeta());
+		bdto.setCategories(blog.getCategories());
+		bdto.setFbLink(blog.getFbLink());
+		bdto.setTwink(blog.getTwink());
+		bdto.setGpLink(blog.getGpLink());
+		bdto.setInLink(blog.getInLink());
 		System.out.println(bdto.getTitle());
 		model.addAttribute("bdto", bdto);
 		System.out.println(bdto.getTitle());

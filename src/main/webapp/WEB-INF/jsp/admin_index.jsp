@@ -13,7 +13,7 @@
                         <a href="<c:url value="/admin/blog-management" />"><i class="fa fa-fw fa-file-text-o"></i> Blogs Management</a>
                     </li>
                     <li>
-                        <a href="file_mngt.html"><i class="fa fa-fw fa-folder-open"></i> File Management</a>
+                        <a href="<c:url value="/admin/fileManagement" />"><i class="fa fa-fw fa-folder-open"></i> File Management</a>
                     </li>
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-user"></i> Student Management</a>

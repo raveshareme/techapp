@@ -56,4 +56,5 @@ public class HomePageController {
 		
 		return "my_course";
 	}
+	
 }

@@ -33,8 +33,8 @@
                 </p>
                 
                 <hr>
-                <a href="blog-post.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/900x300" alt="">
+                <a href="/blogs/${blog.permalink}">
+                    <img class="img-responsive img-hover" src="${blog.image}" alt="-imageblog" style="width:900px;height:300px;">
                 </a>
                 <hr>
                 <p>${blog.description}</p>
@@ -69,27 +69,27 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">Big Data & Analytics</a>
+                                <li><a href="/blogs">Big Data & Analytics</a>
                                 </li>
-                                <li><a href="#">Programming & Web Development</a>
+                                <li><a href="/blogs">Programming & Web Development</a>
                                 </li>
-                                <li><a href="#">Data Science</a>
+                                <li><a href="/blogs">Data Science</a>
                                 </li>
-                                <li><a href="#">Cloud Computing</a>
+                                <li><a href="/blogs">Cloud Computing</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">System Administration</a>
+                                <li><a href="/blogs">System Administration</a>
                                 </li>
-                                <li><a href="#">DevOps</a>
+                                <li><a href="/blogs">DevOps</a>
                                 </li>
-                                <li><a href="#">Database Management</a>
+                                <li><a href="/blogs">Database Management</a>
                                 </li>
-                                <li><a href="#">Software Testing</a>
+                                <li><a href="/blogs">Software Testing</a>
                                 </li>
-                                <li><a href="#">Mobile Development</a>
+                                <li><a href="/blogs">Mobile Development</a>
                                 </li>
                             </ul>
                         </div>

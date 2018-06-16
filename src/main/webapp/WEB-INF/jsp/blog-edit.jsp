@@ -44,7 +44,15 @@
                     <div class="col-lg-8">
 
                         <form:form action="/admin/blog-management/${permalink}/edit" method="POST"  modelattribute="bdto" role="form">
-
+							
+                           <div class="form-group">
+                              <label>Type</label>
+                             <select class="form-control" id="type" name="type">
+							    <option>Blog</option>
+							    <option>Code</option>
+							    <option>Concordance</option>							    
+							  </select>
+                          </div>
                            <div class="form-group">
                               <label>Blog Title</label>
                               <input type="text" id="title" name="title" class="form-control" value="<c:out value="${bdto.title}" />">
@@ -65,33 +73,49 @@
                               <label>Meta Description - (SEO)</label>
                               <textarea id="meta" name="meta" class="form-control" rows="5" ><c:out value="${bdto.meta}" /></textarea>
                           </div>
-						  <div class="checkbox">
- 							 <label><input type="checkbox" value="">Big Data & Analytics</label>
-						 </div>
-						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Programming & Web Development</label>
-						 </div>
-						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">Data Science</label>
-						 </div>
-						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Cloud Computing</label>
-						 </div>
-						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">System Administration</label>
-						 </div>
-						 <div class="checkbox">
-  							<label><input type="checkbox" value="">DevOps</label>
-						 </div>
-						 <div class="checkbox">
- 							 <label><input type="checkbox" value="">Database Management</label>
-						 </div>
-						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Software Testing</label>
-						 </div>
-						 <div class="checkbox">
-  							<label><input type="checkbox" value="">Mobile Development</label>
-						 </div>
+                           <div class="form-group">
+                              <label>FB Link</label>
+                              <input type="text" id="fbLink" name="fbLink" class="form-control" value="<c:out value="${bdto.fbLink}" />">
+                          </div>
+                           <div class="form-group">
+                              <label>TW Link</label>
+                              <input type="text" id="twink" name="twink" class="form-control" value="<c:out value="${bdto.twink}" />">
+                          </div>
+                           <div class="form-group">
+                              <label>Google Plus Link</label>
+                              <input type="text" id="gpLink" name="gpLink" class="form-control" value="<c:out value="${bdto.gpLink}" />">
+                          </div>
+                           <div class="form-group">
+                              <label>Linkdin Link</label>
+                              <input type="text" id="inLink" name="inLink" class="form-control" value="<c:out value="${bdto.inLink}" />">
+                          </div>
+<!-- 						  <div class="checkbox"> -->
+<!--  							 <label><input type="checkbox" value="">Big Data & Analytics</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--   							<label><input type="checkbox" value="">Programming & Web Development</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--  							 <label><input type="checkbox" value="">Data Science</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--   							<label><input type="checkbox" value="">Cloud Computing</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--  							 <label><input type="checkbox" value="">System Administration</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--   							<label><input type="checkbox" value="">DevOps</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--  							 <label><input type="checkbox" value="">Database Management</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--   							<label><input type="checkbox" value="">Software Testing</label> -->
+<!-- 						 </div> -->
+<!-- 						 <div class="checkbox"> -->
+<!--   							<label><input type="checkbox" value="">Mobile Development</label> -->
+<!-- 						 </div> -->
 
 
 

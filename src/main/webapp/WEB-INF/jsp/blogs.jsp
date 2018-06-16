@@ -41,6 +41,8 @@
 	 
 	 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
 	 
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
 	 
 <%-- 	  <link href="<c:url value="/public/lib/bootstrap/css/mymodal.css" />" rel="stylesheet"> --%>
 	  
@@ -59,6 +61,47 @@
      <script src='https://www.google.com/recaptcha/api.js'></script>
      
      <meta name="google-site-verification" content="n80RiE5RHxMf9RYUkls20MfEtUjaGnvHZ-bTL1ONGGI" />
+     
+     
+     <style>
+     	.fa-social {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-google-plus{
+	 background: #CC0000;
+    color: white;
+
+}
+.fa-linkedin{
+ background: #33b5e5;
+    color: white;
+
+}
+     
+     </style>
 
 </head>
 
@@ -95,7 +138,15 @@
                         	<li>
                            		<a href="<c:url value="/blogs" />">Blogs</a>
                         	</li>
-                        	
+                        	<li>
+                           		<a href="<c:url value="/blogs/code" />" >Code</a>
+                        	</li>
+                        	<li>
+                           		<a href="<c:url value="/blogs/concordance" />">Concordance</a>
+                        	</li>
+                        	<li>
+                           		<a href="/downloads">Downloads</a>
+                        	</li>
                           </ul>
                        </li>   	
                         <li>
@@ -226,12 +277,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header"><c:out value="${blogPost.title}" />
-                    <small>by <a href="#">Tech-eklavya</a>
+                    <small>by <a href="/">Tech-eklavya</a>
                     </small>
                 </h1>
                 
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
+                    <li><a href="/">Home</a>
                     </li>
                     <li class="active">Blogs</li>
                 </ol>
@@ -255,10 +306,30 @@
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <img class="img-responsive img-hover" src="${blogPost.image}" alt="" style="width:900px;height:300px;">
 
                 <hr>
+                
+                 
+                <small><strong>Categories-</strong><q><c:forEach var="cat" items="${blogPost.categories}"> ${cat}  </c:forEach></q></small>
+               
+                
+                <br><br>
+                <div class="row">
+                 <div class="col-lg-3"></div>
+                <div class="col-lg-8">
+<a type="button" class="btn-floating  btn-lg btn-fb" href="${blogPost.fbLink}"><i class="fa fa-social fa-facebook"></i></a>
+<!--Twitter-->
+<a type="button" class="btn-floating btn-lg btn-tw" href="${blogPost.twink}"><i class="fa fa-social fa-twitter"></i></a>
+<!--Google +-->
+<a type="button" class="btn-floating btn-lg btn-gplus" href="${blogPost.gpLink}"><i class="fa fa-social fa-google-plus"></i></a>
+<!--Linkedin-->
+<a type="button" class="btn-floating btn-lg btn-li" href="${blogPost.inLink}"><i class="fa fa-social fa-linkedin"></i></a>
+</div>
 
+   </div>
+         <br><br><br>
+         
                 <!-- Post Content -->
                 
                 <p class="blog">
@@ -345,27 +416,27 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">Big Data & Analytics</a>
+                                <li><a href="/blogs">Big Data & Analytics</a>
                                 </li>
-                                <li><a href="#">Programming & Web Development</a>
+                                <li><a href="/blogs">Programming & Web Development</a>
                                 </li>
-                                <li><a href="#">Data Science</a>
+                                <li><a href="/blogs">Data Science</a>
                                 </li>
-                                <li><a href="#">Cloud Computing</a>
+                                <li><a href="/blogs">Cloud Computing</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul class="list-unstyled">
-                                <li><a href="#">System Administration</a>
+                                <li><a href="/blogs">System Administration</a>
                                 </li>
-                                <li><a href="#">DevOps</a>
+                                <li><a href="/blogs">DevOps</a>
                                 </li>
-                                <li><a href="#">Database Management</a>
+                                <li><a href="/blogs">Database Management</a>
                                 </li>
-                                <li><a href="#">Software Testing</a>
+                                <li><a href="/blogs">Software Testing</a>
                                 </li>
-                                <li><a href="#">Mobile Development</a>
+                                <li><a href="/blogs">Mobile Development</a>
                                 </li>
                             </ul>
                         </div>

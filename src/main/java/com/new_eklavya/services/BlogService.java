@@ -16,6 +16,9 @@ public interface BlogService {
 	public abstract Blogs findByPermalink(String title);
 	public abstract void editBlog(BlogDto bdto, String permalink);
 	public abstract void deleteBlog(String permalink);
+	public abstract List<Blogs> findCodeList();
+	public abstract List<Blogs> findConcordanceList();
+	public abstract List<Blogs> findAdminBlogList();
 	
 
 }

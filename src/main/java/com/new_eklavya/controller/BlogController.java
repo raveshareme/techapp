@@ -29,7 +29,7 @@ public class BlogController {
 	@GetMapping("/blog-management")
 	public String getBlogAdmin(Model model) {
 		
-		model.addAttribute("blogList", blogService.findBlogList() );
+		model.addAttribute("blogList", blogService.findAdminBlogList() );
 		
 		return "blog_mngt";
 	}

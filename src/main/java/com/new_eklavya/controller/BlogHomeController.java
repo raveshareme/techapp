@@ -32,5 +32,21 @@ public class BlogHomeController {
 		model.addAttribute("blogPost", blogRepo.findByPermalink(permalink));
 		return "blogs";
 	}
+	@GetMapping("/blogs/code")
+	public String getCodeList(Model model) {
+		
+		
+		model.addAttribute("blogList", blogRepo.findCodeList());
+		
+		return "blog_post";
+	}
+	@GetMapping("/blogs/concordance")
+	public String getconCordanceList(Model model) {
+		
+		
+		model.addAttribute("blogList", blogRepo.findConcordanceList());
+		
+		return "blog_post";
+	}
 
 }
